@@ -1,0 +1,783 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: 800;
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    background-color: black;
+}
+
+#parteInicial {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(38, 34, 108);
+    background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+
+
+#parteInicial div {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    z-index: 4;
+    bottom: 6%;
+}
+
+#parteInicial div button {
+
+    font-size: 40px;
+    padding: 0.5% 2%;
+    background: rgb(38, 34, 108);
+    background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
+    border: solid 2px white;
+    cursor: pointer;
+    color: white;
+    border-radius: 25px;
+    margin-right: 1%;
+    z-index: 3;
+}
+
+#parteInicial div button:hover {
+    background: rgb(196, 195, 193);
+    color: black;
+    cursor: pointer;
+}
+
+#santosNoInicio {
+    width: auto;
+    /*height: 90%;
+    left: 1px;
+    */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+}
+
+#showNoInicio{
+    width: 0;
+    height: 0;
+}
+
+#osDaEsquerda {
+    width: 60%;
+    justify-content: center;
+    display: flex;
+}
+
+#silvio {
+    position: absolute;
+    z-index: 0;
+    /* justify-content: center; */
+    /* display: flex; */
+    width: 60%;
+    height: 100%;
+}
+
+
+#ajudar {
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    padding: 1%;
+    border-radius: 14px;
+    /* margin: 4%; */
+    bottom: 2%;
+}
+
+#ajudar h2 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.cardsDeDicas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.cardsDeDicas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+}
+
+#pular1,
+#pular2,
+#pular3 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+}
+
+#pular1 p,
+#pular2 p,
+#pular3 p {
+    color: inherit;
+}
+
+.imagensDasDicas {
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+#fundoDasDicas {
+    position: absolute;
+    background: rgb(155, 50, 32);
+    background: linear-gradient(164deg, rgba(155, 50, 32, 1) 0%, rgba(62, 23, 41, 1) 48%, rgba(155, 50, 32, 1) 100%);
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    border: solid 2px white;
+    border-radius: 14px;
+}
+
+main {
+    width: 40%;
+    height: 100%;
+    z-index: 2;
+}
+
+#iconSom {
+    position: absolute;
+    height: 7%;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    cursor: pointer;
+
+}
+
+#OndeVaiFicarTudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(38, 34, 108);
+    background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
+    border-right: solid white 1px;
+}
+
+#OndeVaiFicarTudo img {
+    width: 40%;
+    margin-bottom: 3%;
+}
+
+#perguntas {
+    width: 80%;
+    padding: 2%;
+    padding-right: 15%;
+    padding-left: 10%;
+    font-size: 40px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: solid white 1px;
+    display: flex;
+    cursor: default;
+    background: rgb(155, 50, 32);
+    background: linear-gradient(164deg, rgba(155, 50, 32, 1) 0%, rgba(62, 23, 41, 1) 48%, rgba(155, 50, 32, 1) 100%);
+    z-index: 2;
+}
+
+#ondeFicarAsOpcoes {
+    width: 80%;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    padding: 1% 4%;
+    font-size: 30px;
+    margin-top: 3%;
+    border: solid white 1px;
+    border-radius: 15px;
+    background: rgb(155, 50, 32);
+    background: linear-gradient(164deg, rgba(155, 50, 32, 1) 0%, rgba(62, 23, 41, 1) 48%, rgba(155, 50, 32, 1) 100%);
+    cursor: default;
+}
+
+.hoverNeles:hover {
+    background: rgb(196, 195, 193);
+    color: black;
+    cursor: pointer;
+}
+
+.opcoes b {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 0.3% 2%;
+    margin-right: 2%;
+}
+
+#opcoesDeparar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: default;
+}
+
+#opcoesDeparar p {
+    margin-top: 4%;
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+#opcoesDeparar p span {
+    background-color: rgb(223, 223, 26);
+    color: #9b3220;
+    padding: 0.5% 0%;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-bottom: 3%;
+
+}
+
+#parabens {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    cursor: default;
+}
+
+.mudarCorVerde {
+    background: rgb(7, 172, 7);
+    cursor: default;
+}
+
+.mudarCorVermelho {
+    background: red;
+    cursor: default;
+}
+
+#confirmacao {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+
+#caixaDaConfirmacao {
+    background-color: black;
+    padding: 2%;
+    border: solid 1px black;
+    border-radius: 12px;
+    opacity: 1;
+    z-index: 2;
+}
+
+#caixaDaConfirmacao h2 {
+    font-size: 35px;
+    margin-bottom: 14%;
+
+}
+
+#caixaDaConfirmacao div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+#caixaDaConfirmacao button {
+    font-size: 25px;
+    background-color: #9b3220;
+    border: solid 1px white;
+    border-radius: 12px;
+    padding: 3% 8%;
+}
+
+#caixaDaConfirmacao button:hover {
+    background: rgb(196, 195, 193);
+    color: black;
+    cursor: pointer;
+}
+
+#fundo {
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#parar {
+    position: absolute;
+    width: 100%;
+    background: black;
+    height: 100%;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursorNoParar {
+    cursor: pointer;
+    border: solid 2px;
+    border-radius: 12px;
+    background: rgb(155, 50, 32);
+    background: linear-gradient(164deg, rgba(155, 50, 32, 1) 0%, rgba(62, 23, 41, 1) 48%, rgba(155, 50, 32, 1) 100%);
+    padding: 1%;
+}
+
+
+#universitario {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+
+#universitario h2,
+#cartas h2 {
+    text-align: center;
+    font-size: 40px;
+    background: black;
+    width: 40%;
+    padding: 0 2%;
+    padding-top: 1%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#respostaDosUniversitarios,
+#parteDasCartas {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 2%;
+    background: black;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#respostaDosUniversitarios div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#respostaDosUniversitarios div img {
+    width: 60%;
+}
+
+#respostaDosUniversitarios div p {
+    font-size: 28px;
+    background-color: white;
+    margin-top: 4%;
+    color: black;
+    padding: 2% 6%;
+    border-radius: 50%;
+}
+
+#fundoUniversitarios {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#cartas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+
+
+
+.imagemCarta {
+    width: 22%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#fundoDasCartas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#parar h2{
+    cursor: default;
+}
+
+@media (max-width: 1460px) {
+    main {
+        width: 50%;
+    }
+
+    #OndeVaiFicarTudo img {
+        width: 30%;
+    }
+
+    #perguntas {
+        font-size: 35px;
+    }
+
+    .opcoes {
+        font-size: 25px;
+    }
+
+    #opcoesDeparar p {
+        margin-top: 2%;
+        font-size: 25px;
+    }
+
+    #osDaEsquerda,
+    #silvio {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1060px) {
+    #parteInicial div button{
+        padding: 1.5% 5%;}
+    #universitario h2, #cartas h2{
+        font-size: 25px;
+    }
+    #respostaDosUniversitarios div p {
+        font-size: 25px;
+        padding: 2% 9%;
+    }
+    main {
+        width: 60%;
+    }
+
+    #OndeVaiFicarTudo img {
+        width: 30%;
+    }
+
+    #perguntas {
+        font-size: 30px;
+    }
+
+    .opcoes {
+        font-size: 20px;
+    }
+
+    #opcoesDeparar p {
+        margin-top: 2%;
+        font-size: 20px;
+    }
+
+    #opcoesDeparar p span {
+        font-size: 25px;
+    }
+
+    #osDaEsquerda,
+    #silvio {
+        width: 40%;
+    }
+
+    #ajudar {
+        width: 35%;
+    }
+
+    #ajudar h2 {
+        font-size: 22px;
+    }
+
+    .cardsDeDicas div p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .imagensDasDicas{
+        width: 45%;
+    }
+    #respostaDosUniversitarios, #parteDasCartas,    #universitario h2, #cartas h2 {
+        width: 80%;
+    }
+    .imagemCarta{
+        border-radius: 10px;
+    }
+    #ajudar h2 {
+        font-size: 18px;
+    }
+
+    .cardsDeDicas div p {
+        font-size: xx-small;
+    }
+}
+
+@media (max-width: 770px) {
+    #universitario h2, #cartas h2{
+        font-size: 20px;
+    }
+    #respostaDosUniversitarios div p {
+        font-size: 20px;
+        padding: 2% 9%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        height: -webkit-fill-available;
+    }
+
+    #OndeVaiFicarTudo img {
+        width: 35%;
+    }
+
+    #OndeVaiFicarTudo {
+        border-right: 0px;
+        height: 100%;
+    }
+
+    #perguntas {
+        width: 82%;
+        padding-right: 9%;
+        padding-left: 9%;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    #osDaEsquerda {
+        width: 100%;
+        height: 30%;
+
+        border-top: solid 2px;
+        position: static;
+        z-index: 2;
+        align-items: center;
+        background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
+    }
+
+    #silvio {
+        display: none;
+    }
+
+    #ajudar {
+        width: 40%;
+        bottom: auto;
+    }
+    #uni img{
+        width: 40%;
+    }
+
+
+}
+
+@media (max-width: 440px){
+    #parteInicial{
+        background-image: url("src/img/silvio-santos7-removebg.png");
+        background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
+        
+    }
+    #showNoInicio{
+        position: absolute;
+        top: 10%;
+        display: flex;
+        width: 60%;
+        height: auto;
+        z-index: 2;
+    }
+
+    #santosNoInicio{
+        z-index: 1;
+        position: none;
+
+        height: 0;
+        width: 0;
+    }
+
+    #parteInicial div button{
+        padding: 2% 6%;
+        background: linear-gradient(164deg, rgba(155, 50, 32, 1) 0%, rgba(62, 23, 41, 1) 48%, rgba(155, 50, 32, 1) 100%);
+    }
+
+    #universitario h2, #cartas h2{
+        font-size: 14px;
+    }
+    #respostaDosUniversitarios div p {
+        font-size: 17px;
+        padding: 1% 9%;
+    }
+    #ondeFicarAsOpcoes{
+        width: 90%;
+    }
+    .opcoes {
+        padding: 1% 3%;
+    }
+    .opcoes b{
+        padding: 0.1% 3%;
+    }
+    #uni{
+        width: 40%;
+    }
+
+    #ajudar {
+        width: 50%;
+    }
+
+    #parabens {
+        font-size: 40px;
+    }
+    #caixaDaConfirmacao{
+        padding: 3%;
+    }
+
+    #caixaDaConfirmacao h2 {
+        font-size: 25px;
+    }
+
+    #caixaDaConfirmacao button{
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-height: 770px) {
+    #perguntas {
+        font-size: 30px;
+    }
+
+    .opcoes {
+        font-size: 25px;
+    }
+
+    .opcoes b {
+        font-size: 30px;
+    }
+
+    #opcoesDeparar p {
+        margin-top: 2%;
+        font-size: 20px;
+    }
+
+    #opcoesDeparar p span {
+        font-size: 23px;
+    }
+
+}
+
+@media (max-height: 670px) {
+    #perguntas {
+        font-size: 25px;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+
+
+    .opcoes {
+        font-size: 20px;
+    }
+
+    .opcoes b {
+        font-size: 25px;
+    }
+
+    #opcoesDeparar p {
+        margin-top: 2%;
+        font-size: 17px;
+    }
+
+    #opcoesDeparar p span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 330px) and (max-height: 570px){
+    #osDaEsquerda{
+        height: 36%;
+    }
+    #perguntas{
+        font-size: 20px;
+    }
+
+    .opcoes{
+        font-size: 15px;
+    }
+
+    .opcoes b{
+        font-size: 20px;
+        padding: 0.1% 2.3%;
+    }
+
+    #ajudar{
+        width: 63%;
+    }
+
+    #parar h2{
+        font-size: 22px;
+        cursor: default;
+    }
+    #parabens {
+        font-size: 30px;
+    }
+}

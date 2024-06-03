@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Milhão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/img/Show_do_milhao.webp" type="image/x-icon">
+</head>
+
+<body>
+    <div id="parteInicial">
+        <img src="src/img/show-do-milhao-950x503.jpg" id="santosNoInicio" alt="Silvio Santos">
+        <img src="src/img/Show_do_milhao.webp" id="showNoInicio" alt="show-do-milhao">
+
+        <div>
+            <button name="jogar" onclick="jogar()" type="button">Jogar</button>
+          
+        </div>
+    </div>
+
+    <div id="confirmacao">
+        <div id="caixaDaConfirmacao">
+            <h2>Você tem certeza?</h2>
+            <div>
+                <button id="buttonDEConfirmacao" type="button">SIM</button>
+                <button onclick="confirma()" type="button">NÃO</button>
+            </div>
+        </div>
+        <div id="fundo"></div>
+    </div>
+
+    <main>
+
+        <img src="src/img/27150.png" onclick="trilha()" id="iconSom" alt="som">
+        <div id="OndeVaiFicarTudo">
+            <img src="src/img/Show_do_milhao.webp" alt="Show do Milhão">
+            <div id="perguntas">
+                <p>QUEM É O PAI DA CHIQUINHA</p>
+            </div>
+            <div id="ondeFicarAsOpcoes">
+                <div class="opcoes hoverNeles" onclick="confirma('false1')" data-correto="false" id="false1">
+                    <b>1</b> <p> GIRAFALES</p>
+                </div>
+                <div class="opcoes hoverNeles" onclick="confirma('false2')" data-correto="false" id="false2">
+                    <b>2</b> <p> SEU BARRIGA</p>
+                </div>
+                <div class="opcoes hoverNeles" onclick="confirma('true')" data-correto="true" id="true">
+                    <b>3</b>
+                    <p>SEU MADRUGA</p></div>
+                <div class="opcoes hoverNeles" onclick="confirma('false3')" data-correto="false" id="false3">
+                    <b>4</b> <p>NHONHO</p> 
+                </div>
+
+            </div>
+
+            <div id="opcoesDeparar">
+                <p><span>0</span>ERRAR</p>
+                <p class="cursorNoParar" onclick="parar()"><span>0</span> PARAR</p>
+                <p><span>1MIL</span> ACERTAR</p>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="osDaEsquerda">
+        <img src="src/img/silvio-22599219.webp" id="silvio" alt="Silvio Santos">
+
+        <div id="ajudar">
+            <h2>Ajudar</h2>
+            <div class="cardsDeDicas">
+                <div id="uni" onclick="universitario('sabidos')">
+                    <img class="imagensDasDicas" src="/src/img/book-glasses_icon-icons.com_56355.png"
+                        alt="UNIVERSITÁRIOS">
+                    <p>UNIVERSITÁRIOS</p>
+                </div>
+                <div id="pla" onclick="universitario('placas')">
+                    <img class="imagensDasDicas" src="src/img/Placa-Branca-PNG.png" alt="placa">
+                    <p>PLACAS</p>
+                </div>
+                <div id="cart" onclick="localCarta()">
+                    <img class="imagensDasDicas" src="src/img/card_genre_category_gaming_game_icon_225928.png"
+                        alt="CARTAS">
+                    <p>CARTAS</p>
+                </div>
+            </div>
+            <div class="cardsDeDicas">
+                <div onclick="pular('pular1')" id="pular1">
+                    <img class="imagensDasDicas" src="src/img/10574.png" alt="PULAR">
+                    <p>PULAR</p>
+                </div>
+                <div onclick="pular('pular2')" id="pular2">
+                    <img class="imagensDasDicas" src="src/img/10574.png" alt="PULAR">
+                    <p>PULAR</p>
+                </div>
+                <div onclick="pular('pular3')" id="pular3">
+                    <img class="imagensDasDicas" src="src/img/10574.png" alt="PULAR">
+                    <p>PULAR</p>
+                </div>
+            </div>
+            <div id="fundoDasDicas"></div>
+        </div>
+    </div>
+
+    <div id="parabens" onclick="proximoPergunta()">
+        <h2>PARABENS</h2>
+    </div>
+
+    <div id="parar" onclick="proximoPergunta()">
+        <h2>Você parou com </h2>
+    </div>
+
+    <div id="universitario" onclick="universitario()">
+
+        <h2>UNIVERSITÁRIOS</h2>
+        <div id="respostaDosUniversitarios">
+            <div>
+                <img class="imagensDasDicas" src="/src/img/book-glasses_icon-icons.com_56355.png" alt="UNIVERSITÁRIOS">
+                <p>1</p>
+            </div>
+            <div>
+                <img class="imagensDasDicas" src="/src/img/book-glasses_icon-icons.com_56355.png" alt="UNIVERSITÁRIOS">
+                <p>2</p>
+            </div>
+            <div>
+                <img class="imagensDasDicas" src="/src/img/book-glasses_icon-icons.com_56355.png" alt="UNIVERSITÁRIOS">
+                <p>3</p>
+            </div>
+        </div>
+
+        <div id="fundoUniversitarios"></div>
+    </div>
+
+    <div id="cartas">
+        <h2>CARTAS</h2>
+        <div id="parteDasCartas">
+            <img src="src/img/parte de tras da carta.png" class="imagemCarta" onclick="cartas('as')" name="as" alt="parte de tras da carta">
+            <img src="src/img/parte de tras da carta.png" class="imagemCarta" onclick="cartas('dois de copas')" name="dois de copas" alt="parte de tras da carta">
+            <img src="src/img/parte de tras da carta.png" class="imagemCarta" onclick="cartas('3 de copas')" name="3 de copas" alt="parte de tras da carta">
+            <img src="src/img/parte de tras da carta.png" class="imagemCarta" onclick="cartas('reis')" name="reis" alt="parte de tras da carta">
+            <!--
+            <img src="src/img/as.png" alt="as">
+            <img src="src/img/dois de copas.png" alt="dois de copas">
+            <img src="src/img/3 de copas.png" alt="3 de copas">
+            <img src="src/img/reis.png" alt="reis">-->
+        </div>
+        <div id="fundoDasCartas" onclick="localCarta()">
+
+        </div>
+    </div>
+
+    <audio  id="audioDaRepostaCertaEErrada"></audio>
+
+    <audio  autoplay loop id="audioDeFundo"> </audio>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
