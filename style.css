@@ -632,6 +632,33 @@ main {
 
 }
 
+
+
+
+@media (max-height: 770px) {
+    #perguntas {
+        font-size: 30px;
+    }
+
+    .opcoes {
+        font-size: 25px;
+    }
+
+    .opcoes b {
+        font-size: 30px;
+    }
+
+    #opcoesDeparar p {
+        margin-top: 2%;
+        font-size: 20px;
+    }
+
+    #opcoesDeparar p span {
+        font-size: 23px;
+    }
+
+}
+
 @media (max-width: 480px){
     #perguntas {
         font-size: 25px;
@@ -711,31 +738,6 @@ main {
 
     #caixaDaConfirmacao button{
         font-size: 16px;
-    }
-
-}
-
-
-@media (max-height: 770px) {
-    #perguntas {
-        font-size: 30px;
-    }
-
-    .opcoes {
-        font-size: 25px;
-    }
-
-    .opcoes b {
-        font-size: 30px;
-    }
-
-    #opcoesDeparar p {
-        margin-top: 2%;
-        font-size: 20px;
-    }
-
-    #opcoesDeparar p span {
-        font-size: 23px;
     }
 
 }
