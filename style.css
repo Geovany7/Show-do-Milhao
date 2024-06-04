@@ -633,6 +633,17 @@ main {
 }
 
 @media (max-width: 480px){
+    #perguntas {
+        font-size: 25px;
+    }
+
+    .opcoes {
+        font-size: 20px;
+    }
+
+    .opcoes b {
+        font-size: 25px;
+    }
     #parteInicial{
         background-image: url("src/img/silvio-santos7-removebg.png");
         background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
