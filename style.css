@@ -711,10 +711,14 @@ main {
     }
 
     #universitario h2, #cartas h2{
-        font-size: 14px;
+        padding-top: 4%;
+        font-size: 18px;
     }
+        #respostaDosUniversitarios, #parteDasCartas{
+            padding-bottom: 7%;
+        }
     #respostaDosUniversitarios div p {
-        font-size: 17px;
+        font-size: 20px;
         padding: 1% 9%;
     }
     #ondeFicarAsOpcoes{
