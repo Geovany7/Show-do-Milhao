@@ -660,6 +660,15 @@ main {
 }
 
 @media (max-width: 480px){
+    main{
+        height: auto;
+        padding: 9% 0;
+        background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
+    }
+    #iconSom{
+        height: 6%;
+        margin-top: 0;
+    }
     #perguntas {
         font-size: 25px;
     }
@@ -712,16 +721,22 @@ main {
         width: 90%;
     }
     .opcoes {
-        padding: 1% 3%;
+        padding: 2% 3%;
+        margin-top: 4%;
     }
     .opcoes b{
         padding: 0.1% 3%;
     }
-    #uni{
-        width: 40%;
+    #opcoesDeparar p {
+        margin-top: 3%;
     }
-
+    #osDaEsquerda {
+        height: -webkit-fill-available;
+    }
     #ajudar {
+        width: 80%;
+    }
+    .imagensDasDicas, #uni img{
         width: 50%;
     }
 
