@@ -662,7 +662,7 @@ main {
 @media (max-width: 480px){
     main{
         height: auto;
-        padding: 9% 0;
+        padding: 7% 0;
         background: linear-gradient(164deg, rgba(38, 34, 108, 1) 0%, rgba(24, 21, 87, 1) 48%, rgba(38, 34, 108, 1) 100%);
     }
     #iconSom{
