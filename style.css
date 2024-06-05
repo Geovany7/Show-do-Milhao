@@ -670,15 +670,15 @@ main {
         margin-top: 0;
     }
     #perguntas {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .opcoes {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .opcoes b {
-        font-size: 25px;
+        font-size: 24px;
     }
     #parteInicial{
         background-image: url("src/img/silvio-santos7-removebg.png");
